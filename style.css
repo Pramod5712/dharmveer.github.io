@@ -15,22 +15,21 @@ body {
     font-style: "Lato", sans-serif;
 }
 .theCard {
-    width: 300px;
-    height: 400px;
-    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.3);
+    width: 90vw;
+    height: 80vh;
+box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     overflow: hidden;
     background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     transition: box-shadow 0.2s ease-in;
-    cursor: pointer;
 }
 
 .theCard:hover {
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.4);
+box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.4),10px -10px 20px rgba(0, 0, 0, 0.4);
+    
 }
 
 
@@ -38,7 +37,9 @@ body {
     height: 150px;
     width: 100%;
     position: relative;
-    background: url('https://www.dropbox.com/s/uuzhq7y4mhhlr5f/a317685c9db51d8be7c7871c91205df8.jpg?raw=1');
+  /*  background: url('https://www.dropbox.com/s/uuzhq7y4mhhlr5f/a317685c9db51d8be7c7871c91205df8.jpg?raw=1');*/
+  background: url(cr.jpg);
+
     background-position: center;
     background-size: cover;
 }
@@ -57,14 +58,14 @@ body {
 
 .theCard .user-details {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 37px;
     margin-bottom: 25px;
-    width: 80%;
+    width: 90%;
 }
 
 .theCard .user-details .user-name {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
