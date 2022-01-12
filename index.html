@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+<meta name="theme-color" content="#EEF7F2" />
         <title>Page Title</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>      
+        
+ 
+        
         
     
 <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    </head>
+<link rel="stylesheet" href="nav.css" type="text/css" media="all" />
+ </head>
     <body>
+<nav class="navbar">
+    <div id="logo"><img src="logo.png" alt="" /></div>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">BLOG</a></li>
+       <li><a href="#">CONTACT US</a></li>
+    </ul>
+</nav>
+        
+        
+        
+        
+   <div class="main">     
         <div class="theCard skeletn">
             <div class="user-cover">
-                    <img class="avatar" src="dv.jpg"/>
+                    <img class="avatar" src="dmr.jpg"/>
             </div>
             <div class="user-details">
                 <div class="user-name hide-text">DharmVeer</div>
@@ -20,5 +42,26 @@
                 <button class="contact-user hide-text">CONTACT</button>
             
         </div>
+        
+        
+        </div>
+        
+<script>
+jQuery(function($){
+ var $navbar = $('.navbar');
+ $(window).scroll(function(event){
+   var $current = $(this).scrollTop();
+   if( $current > 10px ){
+     $navbar.addClass('navclr');
+   }else{
+     $navbar.removeClass('navclr'); }
+   });
+} );
+        
+        
+</script>        
+
+        
+        
     </body>
 </html>
